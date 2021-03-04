@@ -1,9 +1,9 @@
 function isPrime(num) {
-  if (num % 2 === 0 || num % 3 === 0) {
-    console.log(false);
-  } else {
-    console.log(true);
+  for (let i = 2; i < Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
   }
+  return true;
 }
-
-isPrime(14)
+console.log(isPrime(8))
