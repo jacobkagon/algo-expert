@@ -1,5 +1,5 @@
 function bubbleSort(array) {
-  // Write your code here.
+ 
   let isSorted = false;
 
   let counter = 0;
